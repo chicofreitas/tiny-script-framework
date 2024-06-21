@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "typescript": "^5.4.5"
+  },
+  "name": "observer-design-pattern",
+  "version": "1.0.0",
+  "description": "Observer Design Pattern study.",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx tsc",
+    "build:start": "npx tsc && node dist/src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "TypeScript",
+    "Design",
+    "Patterns",
+    "Observer."
+  ],
+  "author": "Chicoo Freitas",
+  "license": "ISC"
+}
