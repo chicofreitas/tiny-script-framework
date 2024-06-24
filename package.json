@@ -6,7 +6,9 @@
   "version": "1.0.0",
   "description": "Observer Design Pattern study.",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "log4js": "^6.9.1"
+  },
   "scripts": {
     "build": "npx tsc",
     "build:start": "npx tsc && node dist/src/app.js",

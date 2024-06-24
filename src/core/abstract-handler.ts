@@ -1,8 +1,11 @@
+import { SetNextHandlerEvent } from "./Beholder/events";
+
 export abstract class AbstractHandler implements Handler<string, string> {
 
     private nextHandler: Handler | undefined;
 
     public setNext(handler: Handler): Handler {
+        SetNextHandlerEvent.notify();
         this.nextHandler = handler;
         return handler;
     }
@@ -16,5 +19,4 @@ export abstract class AbstractHandler implements Handler<string, string> {
         // Returning Null Handler
         return null;
     }
-    
 }
